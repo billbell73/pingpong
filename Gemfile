@@ -52,6 +52,8 @@ group :development, :test do
 	gem 'poltergeist', github: 'jonleighton/poltergeist'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
+  gem 'guard-rspec', require: false
+	gem 'growl'
 end
 
 gem 'devise'

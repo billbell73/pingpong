@@ -10,7 +10,7 @@ describe Game do
 			expect(game.points).to eq 0
 		end
 
-		it "increments points" do
+		xit "increments points" do
 			game.award_point
 			expect(game.points).to eq 1
 		end
@@ -24,7 +24,7 @@ describe Game do
     expect(game).to have(:no).errors_on(:number)
 	end
 
-	it "can delete a point" do
+	xit "can delete a point" do
 		game.points = 9
 		game.award_point
 		expect(game.points).to eq 10
@@ -38,12 +38,12 @@ describe Game do
 		expect(game.points).to eq 0
 	end
 
-	it "let's match know a point has been added" do
+	xit "let's match know a point has been added" do
 		game.award_point
 		expect(:match_.to receive(:point_change))
 	end
 
-	it "let's match know a point has been deleted" do
+	xit "let's match know a point has been deleted" do
 		game.delete_point
 		expect(:match_.to receive(:point_change))
 	end

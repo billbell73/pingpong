@@ -1,6 +1,14 @@
 
 describe('App controller', function() {
   beforeEach(module('App'));
+
+  beforeEach(function() {
+    this.addMatchers({
+      toEqualData: function(expected) {
+        return angular.equals(this.actual, expected);
+      }
+    });
+  });
  
   // describe('ChartController', function(){
  
@@ -26,6 +34,11 @@ describe('App controller', function() {
 
         expect(scope.colors1.length).toBe(2);
         
+    });
+
+    it('checking test scope', function(){
+      expect(scope.playerRecords).toEqual([{points: 2, coordinates: [{x:25,y:300}, {x:50,y:275}, {x:75,y:275}, {x:100,y:250}]},
+                        {points: 1, coordinates: [{x:25,y:300}, {x:50,y:300}, {x:75,y:275}, {x:100,y:275}]}]);
     });
 
     it('can delete all rallies', function(){
