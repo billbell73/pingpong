@@ -1,9 +1,11 @@
 class Api::MatchesController < ApplicationController
 	respond_to :json
+	protect_from_forgery with: :null_session
 
 	include MatchesHelper
  
-	  def update
+	  def update 
+	  	# raise params.inspect
 	    @match = Match.find(params[:id])
 	    @new_game = (params[:new_game])
 	    
@@ -27,6 +29,10 @@ class Api::MatchesController < ApplicationController
 		  end
 	    
 	    WebsocketRails["table#{@match.id}"].trigger 'edit', table_data(@match, player_index, @point_direction, @new_game)
+ 	  end
+
+ 	  def show
+ 	  	@match = Match.find(params[:id])
  	  end
 
 end
