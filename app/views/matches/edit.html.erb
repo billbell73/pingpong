@@ -1,0 +1,38 @@
+<!-- %div.match_over
+   -if @match.over?
+  Congratulations #{@match.find_winner}! Would you like to
+  = link_to "Save Game?", connect_match_path, method: :get, class: "match_button" 
+  or clear the score and
+  = link_to "Start New Game?", new_match_path, method: :get, class: "new_match_button"  -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ping Scorer</title>
+  <!-- <link rel="stylesheet" href="styles/alex.css"> -->
+</head>
+<body ng-app="pingApp">
+
+
+  <div ng-controller="ScorerCtrl">
+
+    <div ng-view></div>
+    
+    
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-resource.min.js"></script>
+
+  
+
+</body>
+</html>
+
+  <!-- %div.game_over  
+    / -if @match.end_of_current_game? && !@match.over?
+    %button.game_button
+      = image_tag 'next_game.svg'  -->

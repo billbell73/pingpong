@@ -1,0 +1,36 @@
+	<div id="container" class="match" ng-class="{ flipped: score.gameOdd }">
+
+		  <section class="player1">
+		    <h2 id="p1-name">
+		    	Player 1
+		    </h2>
+		    <article id="p1-points" ng-click="increment(7)" ng-cloak>
+		    	{{score.p1points}}
+		    </article>
+		    <aside id="p1-games">
+		    	{{score.p1games}}
+		    </aside>
+				<serveball1></serveball1>
+			
+
+				
+
+		   
+		    <nav class="p1-back" ng-click="decrement(7)">Back</nav>
+		  </section>
+
+		  <section class="player2">
+		    <h2 id="p2-name">
+		    	Player 2
+		    </h2>
+		    <article id="p2-points" ng-click="increment(8)">
+		    	{{score.p2points}}
+		    </article>
+		    <aside id="p2-games">
+		    	{{score.p2games}}
+		    </aside>
+		    <serveball2></serveball2>
+		    <nav class="p2-back" ng-click="decrement(8)">Back</nav>
+		  </section>
+
+	</div>
