@@ -18,7 +18,7 @@ This is our final project at Makers Academy, built in just ten days. This projec
 
 1. Scoring App optimised for mobile or tablet
 
-1. Scoreboard with dynamic charts and stats (See explanation/presentation {here}[https://www.youtube.com/watch?v=8AcNqQhlnjg&t=1m58s])
+1. Scoreboard with dynamic charts and stats (See 2 min presentation {here}[https://www.youtube.com/watch?v=8AcNqQhlnjg&t=1m53s])
 
 1. Club Finder
 
