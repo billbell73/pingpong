@@ -1,6 +1,6 @@
 = Ping Pong Pros
 
-This is our final project at Makers Academy, built in just ten days. With this project we hope to revolutionalise the world of Ping Pong / Table Tennis. You can view it here[http://www.pingpongpros.com/].
+This is our final project at Makers Academy, built in just ten days. This project is the start of a mission to revolutionalise the world of Ping Pong. You can view it here[http://www.pingpongpros.com/] (please note that site will take 10 secs to wake up).
 
 === The Team
 
@@ -16,9 +16,9 @@ This is our final project at Makers Academy, built in just ten days. With this p
 
 1. Player Profiles
 
-1. Scoring App
+1. Scoring App optimised for mobile or tablet
 
-1. Live Scoreboard
+1. Scoreboard with dynamic charts and stats (See explanation/presentation {here}[https://www.youtube.com/watch?v=8AcNqQhlnjg&t=1m58s])
 
 1. Club Finder
 
